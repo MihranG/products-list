@@ -131,7 +131,7 @@ const renderInputField = (field)=>{
                 <Input valid={touched && !error} invalid={(touched && !!error)|| (!!isEdit && !!error) } id="expirationDate" {...field.input}  type="date"
                     name="expirationDate"
                     placeholder="date placeholder"/>
-                <FormText>*required integer between 1 and 10(including)</FormText>
+                <FormText>(Optional, SHOULD not be earlier than one month from now</FormText>
                 <FormFeedback>{error}</FormFeedback>
             </FormGroup>
           )
